@@ -63,7 +63,7 @@ def winner(board)
   winner = won?(board) #First, we set the variable 'winner' equal to the array resulting from our 'won?' method (if a winning combo is found).
   #We then jump into a conditional statement. If we have a winner, we want to check what character won the game: 'X' or 'O'.
   if winner #First, let's say we had a diagonal winner ([0,5,8]). We can call any value from this array and set it equal to a variable.
-    winning_character = winner[0] #Winning_character
+    winning_character = winner[0] #winning_character
     return board[winning_character]
   else
     nil
