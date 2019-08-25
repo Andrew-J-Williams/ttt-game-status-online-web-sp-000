@@ -61,7 +61,7 @@ end
 
 def winner(board)
   winner = won?(board) #First, we set the variable 'winner' equal to the array resulting from our 'won?' method (if a winning combo is found).
-  #We then jump into a conditional 
+  #We then jump into a conditional statement
   if winner
     winning_character = winner[0]
     return board[winning_character]
