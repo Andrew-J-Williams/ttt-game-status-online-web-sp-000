@@ -65,7 +65,7 @@ def winner(board)
   if winner #First, let's say we had a diagonal winner ([0,5,8]). We can call any value from this array and set it equal to a variable.
     winning_character = winner[1] #winning_character is set equal to the value of the called array position. In this case, we call the middle value of '5'.
     return board[winning_character] #then, we return the board position of the winning_character value, which could be read as 'board[5]'
-  else
+  else #if there are not winning combinations found, we return a value of 'nil'
     nil
   end
 
