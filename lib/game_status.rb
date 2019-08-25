@@ -60,7 +60,9 @@ def over?(board)
 end
 
 def winner(board)
-  won?(board).each do |value|
+  winner = won?(board)
+
+  .each do |value|
     if value == "X"
       return "X"
     elsif value == "O"
