@@ -44,5 +44,5 @@ end #Otherwise, the game is still in progress since a " " was detected, returnin
 
 
 def draw?(board)
-  full?(board) && !won?(board)
+  full?(board) && !won?(board) #returns true if the board is full and there are no winning combinations
 end
