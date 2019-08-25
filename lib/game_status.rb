@@ -46,7 +46,7 @@ end #Otherwise, the game is still in progress since a " " was detected, returnin
 def draw?(board)
 
   if full?(board) == true
-    
+    return true
   end
 
 end
