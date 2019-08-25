@@ -37,5 +37,11 @@ end
 
 def full?(board)
 
+  board.each do |value|
+    if value != " "
+      return true
+    else
+      return false
+    end
 
 end
