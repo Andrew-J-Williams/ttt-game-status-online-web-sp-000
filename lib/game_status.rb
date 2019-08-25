@@ -41,3 +41,4 @@ def full?(board)
     value == "X" || value == "O"
   end
 end
+
