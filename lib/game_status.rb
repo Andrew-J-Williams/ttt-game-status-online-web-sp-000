@@ -3,4 +3,34 @@ def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
 end
 
+# Sample Board for Help
+#  0 | 1 | 2
+# -----------
+#  3 | 4 | 5
+# -----------
+#  6 | 7 | 8
+
+
 # Define your WIN_COMBINATIONS constant
+WIN_COMBINATIONS = [
+  [0,1,2], #0 'top row win'
+  [3,4,5], #1 'middle row win'
+  [6,7,8], #2 'bottom row win'
+  [0,3,6], #3 'first column win'
+  [1,4,7], #4 'second column win'
+  [2,5,8], #5 'third column win'
+  [0,4,8], #6 'left diagonal win'
+  [2,4,6]  #7 'right diagonal win'
+]
+
+def won?(board)
+
+  WIN_COMBINATIONS.detect do |win_combination| #First, it reads thhrough each element in 'WIN_COMBINATIONS'.
+    win_index_1 = win_combination[0] #For each element (which is an array), it assigns the value at [0] to the variable 'win_index_1'
+    win_index_2 = win_combination[1] #Next, it does the same for the value in that array at [1]
+    win_index_3 = win_combination[2]
+    # board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+
+    board[win_index_1] == board[win_index_2] && board[win_index_2] == board[win_index_3] && board[win_index_1] != " "
+  end
+end
