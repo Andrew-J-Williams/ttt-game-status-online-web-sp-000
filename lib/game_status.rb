@@ -28,7 +28,7 @@ def won?(board)
   WIN_COMBINATIONS.detect do |win_combination| #First, it reads thhrough each element in 'WIN_COMBINATIONS'.
     win_index_1 = win_combination[0] #For each element (which is an array), it assigns the value at [0] to the variable 'win_index_1'
     win_index_2 = win_combination[1] #Next, it does the same for the value in that array at [1]
-    win_index_3 = win_combination[2] 
+    win_index_3 = win_combination[2] #Finally, the value at [2] is assigned, allowing our code below to analyze the contents of each sub-array.
     # board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
     board[win_index_1] == board[win_index_2] && board[win_index_2] == board[win_index_3] && board[win_index_1] != " "
