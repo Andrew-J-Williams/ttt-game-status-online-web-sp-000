@@ -63,6 +63,8 @@ def winner(board)
   won?(board).each do |value|
     if board[value] == "X"
       return "X"
+    elsif board[value] == "O"
+      return "O"
     end
   end
 end
