@@ -32,5 +32,5 @@ def won?(board)
     # board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
     # The code below takes our game board array and checks to see if any combination exists that is a winning match.
     board[win_index_1] == board[win_index_2] && board[win_index_2] == board[win_index_3] && board[win_index_1] != " "
-  end # If a winning combination is found, the 'detect' will return the array. If not, it returns a falsey value. 
+  end # If a winning combination is found, the 'detect' will return the array. If not, it returns a falsey value.
 end
