@@ -62,5 +62,5 @@ end
 def winner(board)
   won?(board).each do |value|
     if board[value] == "X"
-  
+
 end
