@@ -63,4 +63,6 @@ def winner(board)
   winner = won?(board)
 
   winner.all? do |value|
+    return value
+  end
 end
