@@ -45,10 +45,7 @@ end #Otherwise, the game is still in progress since a " " was detected, returnin
 
 def draw?(board)
 
-  if full?(board) == false && won?(board) == false
-    return false
-  else
-    return true
-  end
+  board.all? do |value|
+    value == full?(board)
 
 end
