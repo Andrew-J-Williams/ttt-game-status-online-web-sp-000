@@ -39,5 +39,5 @@ def full?(board)
 
   board.detect do |value|
     value == "X" || value == "O"
-
+  end
 end
