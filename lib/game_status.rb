@@ -37,7 +37,7 @@ end
 
 def full?(board)
 
-  board.detect do |value|
+  board.all? do |value|
     value == "X" || value == "O"
   end
 end
