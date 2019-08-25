@@ -46,7 +46,7 @@ end #Otherwise, the game is still in progress since a " " was detected, returnin
 def draw?(board)
 
   board.all? do |value|
-    value == full?(board)
+    value != full?(board)
   end
-  
+
 end
