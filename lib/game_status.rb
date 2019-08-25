@@ -60,15 +60,5 @@ def over?(board)
 end
 
 def winner(board)
-  winner = won?(board)
-
-  winner.each do |value|
-    if value == "X"
-      return "X"
-    elsif value == "O"
-      return "O"
-    else
-      return nil
-    end
-  end
+  
 end
