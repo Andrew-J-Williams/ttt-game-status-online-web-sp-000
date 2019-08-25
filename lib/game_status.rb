@@ -63,7 +63,7 @@ def winner(board)
   winner = won?(board)
 
   if winner
-    winner[0]
+    winning_character = winner[0]
   else
     nil
   end
