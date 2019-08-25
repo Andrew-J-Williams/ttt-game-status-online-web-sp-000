@@ -37,6 +37,7 @@ end
 
 def full?(board)
 
-  board.detect do{|value| value != " "}
+  board.detect do |value|
+    
 
 end
