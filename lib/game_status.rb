@@ -34,3 +34,7 @@ def won?(board)
     board[win_index_1] == board[win_index_2] && board[win_index_2] == board[win_index_3] && board[win_index_1] != " "
   end # If a winning combination is found, the 'detect' will return the array. If not, it returns a falsey value.
 end
+
+def full?(board)
+
+end
