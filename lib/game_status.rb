@@ -53,8 +53,8 @@ end
 
 def over?(board)
 
-  if won?(board) || full?(board) #returns true if the board has a winning move or the board is full with no winning moves. 
-    return true
+  if won?(board) || full?(board) #returns true if the board has a winning move or the board is full with no winning moves.
+    return true #Will return true if the game is over.
   end
 
 end
