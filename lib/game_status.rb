@@ -48,5 +48,9 @@ def draw?(board)
   if full?(board) && !won?(board) #returns true if the board is full and there are no winning combinations.
     return true
   end
-  
+
+end
+
+def over?(board)
+
 end
