@@ -43,7 +43,7 @@ def full?(board)
 end #Otherwise, the game is still in progress since a " " was detected, returning false.
 
 
-def draw(board)
+def draw?(board)
 
   board.all? do |value|
     value == full?(board)
