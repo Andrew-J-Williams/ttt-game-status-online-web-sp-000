@@ -64,6 +64,7 @@ def winner(board)
 
   if winner
     winning_character = winner[0]
+    return board[winning_character]
   else
     nil
   end
